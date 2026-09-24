@@ -1,0 +1,48 @@
+{
+  "punts": 
+  [
+    { 
+      "nom": "Punt de recollida de Sant Julia de Loria", 
+      "latitud": 42.46459, 
+      "longitud": 1.491946, 
+      "lloc": "Studiblanc" 
+    },
+    { 
+      "nom": "Punt de recollida d'Escaldes", 
+      "latitud": 42.50766, 
+      "longitud": 1.53488, 
+      "lloc": "Tot natura" 
+    },
+    { 
+      "nom": "Punt de recollida d'Encamp", 
+      "latitud": 42.5349, 
+      "longitud":  1.5801, 
+      "lloc": "Fites i fils" 
+    },
+    { 
+      "nom": "Punt de recollida d'Andorra la Vella", 
+      "latitud": 42.5063, 
+      "longitud":  1.5218, 
+      "lloc": "La puça" 
+    },
+    { 
+      "nom": "Punt de recollida de La Massana", 
+      "latitud": 42.5448, 
+      "longitud": 1.5146, 
+      "lloc": "TechHub" 
+    },
+    { 
+      "nom": "Punt de recollida d'Ordino", 
+      "latitud": 42.55636, 
+      "longitud": 1.5333, 
+      "lloc": "Racó de l'Anna" 
+    },
+    { 
+      "nom": "Punt de recollida dE Canillo", 
+      "latitud": 42.5666, 
+      "longitud": 1.5976, 
+      "lloc": "Casa vella" 
+    }
+  ]
+}
+  

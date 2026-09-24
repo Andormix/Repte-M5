@@ -1,0 +1,2542 @@
+/*
+*                           METODOLOGIA BEM 
+*/
+
+/*---------------------- INICI ELEMENTS COMUNS -------------------------- */
+
+    /* ------------ BODY ------------ */
+    body 
+    {
+        font-family: Arial, sans-serif;
+        margin: 5%; /* Unidad medida % para diseño responsive*/
+        padding: 0;
+        
+        /* REDUCIR/AUMENTAR ELEMENTOS COMO BLOQUE
+        transform: scale(1); 
+        transform-origin: top;*/
+    }
+
+    /* ------------ BOTONS ------------ */
+    .btn
+    {
+        background-color: #7d9c73;
+        color: #FFFFFF;
+        border-color: #7d9c73 ;
+    }
+
+    .btn-fade
+    {
+        background-color:#333333;
+    }
+
+    .btn--margin-3
+    {
+        margin-top: 3%
+    }
+
+    .btn:hover
+    {
+        background-color: #333333;
+        color: #FFFFFF;
+        border: #333333;
+    }
+
+    .btn:disabled 
+    {
+        background-color: #333333;
+        color: #FFFFFF;
+        border: #333333;
+    }
+
+    .btn:active
+    {
+        background-color: #7d9c73 !important;
+        color: #FFFFFF !important;
+        box-shadow: none;
+    }
+
+    .btn__margin
+    {
+        margin-top: 5%;
+    }
+
+    .form-control:focus 
+    {
+        border-color: #333333;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(51, 51, 51, 0.6);
+    }
+
+    .page-item.active .page-link /* Paginacio */
+    {
+        color: #fff !important;
+        background: #7d9c73 !important;
+      }
+    
+    /* ------------ ICON ------------ */
+    .icon 
+    {
+        font-size: 40px;
+        color: #7d9c73;
+    }
+    .icon--warning
+    {
+        font-size: 24px;
+        color: #f4d03f; /* Amarillo suave */
+    }
+
+    /* ------------ LINKS ------------ */
+
+    a, a:link, a:visited 
+    {
+        color: #7d9c73;
+    }
+
+    /* ------------ NVAR ------------ */
+    nav .navbar-nav li a
+    {
+        color: white;
+    }
+
+    .navbar-custom 
+    {
+        background-color: #333333;
+        color:white
+
+    }
+    .nvar__icon
+    {
+        color:white
+    }
+    
+    /* ------------ FONTS ------------ */
+
+    p
+    {
+        font-size: calc(12px + .5vw);
+        padding: 2.5%;
+        
+        
+    }
+    h2
+    {
+        font-size: calc(16px + 1.5vw);
+        color: #7d9c73;  
+        font-weight: bold;
+        margin-left: 2.5%;
+    }
+
+    h3
+    {
+        font-size: calc(14px + .5vw);
+        font-weight: bold;
+        padding: 2.5%;
+    }
+
+    h4
+    {
+        font-size: calc(12px + .5vw);
+        font-weight: bold;
+        padding: 2.5%;
+    }
+
+    .no-margin
+    {
+        padding: 0%;
+    }
+
+    /* ------------ BACKGROUNDS COLORS ------------ */
+    .background__secondary
+    {
+        background-color:rgba(51, 51, 51, 0.2);
+        /*background-color:rgba(33, 33, 33, 0.25);*/
+        border-radius: 1%;
+    }
+
+    .background__primary
+    {
+        background-color: rgba(125, 156, 115, 0.2);
+        border-radius: 1%;
+    }
+
+    .background__primary--tenue
+    {
+        background-color:rgba(51, 51, 51, 0.05);
+        border-radius: 1%; 
+    }
+
+
+    /* ------------ BACKGROUNDS COLORS ------------ */
+
+    /* ------------ FORMS COLORS ------------ */
+
+    .form-group
+    {
+        margin-top: 5%;
+    }
+    
+   /* ------------ CHECKBOXES ------------ */
+
+    .custom-checkbox 
+    {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+    }
+  
+    .custom-checkbox input 
+    {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 1px solid #333333;
+    }
+    
+    .custom-checkbox input:checked ~ .checkmark {
+        background-color:#7d9c73;
+    }
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .custom-checkbox input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    .custom-checkbox .checkmark:after {
+        left: 7px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
+
+
+    /* ------------ ESTILO FORMULARIOS BOOTSRAP ------------ */
+    .label--light
+    {
+        color: rgba(51,51,51,0.5);
+        background-color: transparent;
+
+    }
+
+    .form-control.is-valid 
+    {
+        border-color:rgba(125, 156, 115, 1);
+    }
+
+    .form-floating--max-width 
+    {
+        max-width: 500px;
+        min-width: 300px;
+        padding-left: 0;
+        margin-left: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-floating--margen
+    {
+        padding-bottom: 5%;
+    }
+
+    .span--vermell
+    {   
+        max-width: 300px;
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        color:red;
+    }
+
+    /* ------------ Cursor personalizado ------------ */
+
+
+
+/*---------------------- FI ELEMENTS COMUNS -------------------------- */
+    
+
+    
+
+
+
+
+
+/*---------------------- INICI HEADER -------------------------- */
+
+    /* ---------------------- INICI ESPAI 1 --------------------------  */
+
+    /* ------------ CONTAINER ESPAI 1 ------------ */
+    .header-info
+    {
+        /* --- CSS GRID LAYOUT MOVIL + TABLET + PC --- */ 
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        margin-top: -2.5%;
+        margin-bottom: 4%;
+    }
+
+    /* ------------ CONTACTE  ------------ */
+    .header-info__contacte
+    {
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        justify-self: end; 
+
+        /* --- FONT RSPONSIVE --- */
+        font-style: italic;
+        font-size: calc(7px + .5vw);
+    }
+
+    .header-info__idiomes
+    {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+
+    }
+
+    /* ---------------------- INICI ESPAI 2 --------------------------  */
+
+    /* ------------ CONTAINER ESPAI 2 ------------ */
+    .header-centre
+    {
+        /* --- CSS GRID LAYOUT MOVIL + TABLET--- */ 
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 4fr, 1fr, 1fr;
+        column-gap: 2vw;
+        row-gap: 2vw;
+
+         /* --- FONT RSPONSIVE --- */
+        color: #7d9c73;
+        text-align: left;
+        text-align: center;
+        font-size: calc(5px + 0.4vw);
+    }
+
+    /* ------------ LOGO ------------ */
+    .header-centre__logo
+    {
+        
+        width: calc(60px + 5vw);
+        height: calc(60px + 5vw);
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /* ------------ TITOL LOGO ------------ */
+    .header-centre__titol
+    { 
+        font-size: calc(14px + 1.5vw);  
+        text-align: left;  
+        grid-row: 1;     
+        grid-column-start: 2;
+        grid-column-end: 2;
+        justify-self: end; 
+        padding-left: 0% ;   
+    }
+    
+    /* ------------ BARRA CERCA ------------ */
+    .header-centre__barraCerca
+    {
+        align-items: center;
+        overflow: hidden;
+        max-width: 1200px;  
+
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 13;  
+        grid-row: 2;  
+        margin-top: -10px;
+    }
+
+    .header-centre__barraCerca--interior
+    {
+        background-color: #7d9c73;
+    }
+
+    /* ------------ MEDIA QUERY PC BARRA CERCA ------------ */
+    @media screen and (min-width: 1024px)
+    {
+        .header-centre__barraCerca
+        {
+            grid-column-start: 4;
+            grid-column-end: 9;  
+            grid-row: 1;
+        }
+    }
+
+    /* ------------ ICONA INICI SES ------------ */
+    .header-centre__iconIniciSes 
+    {
+        text-align: center;
+        margin: 20px;
+
+        grid-column-start: 4;
+        grid-column-end: 8;  
+        grid-row: 1;
+    }
+
+    /* ------------ ICONA INICI SES ------------ */
+    .header-centre__iconTancarSes 
+    {
+        text-align: center;
+        margin: 20px;
+
+        grid-column-start: 4;
+        grid-column-end: 8;  
+        grid-row: 1;
+    }
+
+    /* ------------ ICONA CISTELLA ------------ */
+    .header-centre__iconCarrousel
+    {
+        text-align: center;
+        margin-top: 20px;
+
+        grid-column-start: 8;
+        grid-column-end: 12;  
+        grid-row: 1;
+    }
+
+    /* ------------ TEXT ICONA ------------ */
+    .header-centre__iconText 
+    {
+        margin-top: 10px;
+        font-size: calc(10px + 0.5vw);
+    }
+
+    /* ------------ MEDIA QUERY TABLET ------------ */
+    @media screen and (min-width: 768px) and (max-width: 1023px)
+    {
+        .header-centre__iconIniciSes 
+        {
+            grid-column-start: 9;
+            grid-column-end: 12;  
+            grid-row: 1;
+        }
+
+        .header-centre__iconTancarSes 
+        {
+            grid-column-start: 9;
+            grid-column-end: 12;  
+            grid-row: 1;
+        }
+
+        .header-centre__iconCarrousel 
+        {
+            grid-column-start: 11;
+            grid-column-end: 16;  
+            grid-row: 1;
+        }
+
+    }
+
+    /* ------------ MEDIA QUERY PC ------------ */
+    @media screen and (min-width: 1024px)
+    {
+        .header-centre__iconIniciSes 
+        {
+            text-align: center;
+            margin: 20px;
+            color:#7d9c73;
+
+            grid-column-start: 9;
+            grid-column-end: 12;  
+            grid-row: 1;
+        }
+
+        .header-centre__iconTancarSes 
+        {
+            text-align: center;
+            margin: 20px;
+            color:#7d9c73;
+
+            grid-column-start: 9;
+            grid-column-end: 12;  
+            grid-row: 1;
+        }
+
+        
+
+        .header-centre__iconCarrousel 
+        {
+            text-align: center;
+            margin: 20px;
+            color:#7d9c73;
+
+            grid-column-start: 11;
+            grid-column-end: 16;  
+            grid-row: 1;
+        }
+    }
+    
+
+/*---------------------- FI HEADER -------------------------- */
+
+
+
+
+
+
+
+/*---------------------- INICI FOOTER -------------------------- */
+
+    /*---------------------- NEWSLETTER -------------------------- */
+
+    .newsletter
+    {
+        margin-top: 10%;
+        display: grid;
+        grid-row: repeat(3, 1fr);
+        grid-column: repeat(12, 1fr);
+        padding: 2.5%; 
+        text-align: center;
+    }
+
+    .newsletter__hidden__text
+    {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+
+    }
+
+    .newsletter__text
+    {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 2;
+
+    }
+
+    .newsletter__form
+    { 
+        grid-column-start: 3;
+        grid-column-end: 10;
+        grid-row-start: 3;
+
+    }
+
+    .newsletter__btn
+    {
+        margin-top: 0%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        height: 57px;
+    }
+
+    .newsletter__btn__fix
+    {
+        min-width: 200px;
+        max-width: 100px;
+        margin-top: 0%;
+        height: 57px;
+    }
+
+
+    .newsletter-return__text
+    {
+        margin-top: 10%;
+        display: grid;
+        grid-row: 1fr;
+        grid-column: 1fr;
+        padding: 2.5%; 
+         
+    }
+
+    .newsletter-return-txt
+    {
+        text-align: center;
+    }
+
+    .newsletter__avis-legal
+    {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 4;
+        text-align: left;
+        margin-top: 2.5%;
+        margin-bottom: -5%;
+        margin-left: -2%
+    }
+
+    .newsletter__avis-legal--tamany
+    {
+        font-size: 12px;
+    }
+
+
+    /* ---------------------- INICI ESPAI 1 FOOTER --------------------------  */
+
+    /* ------------ CONTAINER ESPAI 1 ------------ */
+    .footer-top
+    {
+        /* --- CSS GRID LAYOUT MOVIL + TABLET + PC --- */ 
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        position: relative;
+        margin-top: 2.5%
+    }
+
+    /* ------------ XARXES ------------ */
+    .footer-top__xarxes
+    {
+        margin-top: 30px;
+        padding: 0px;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+    }
+
+    .footer-top__btn
+    {
+        color: #333333;
+        padding-right: 1vw
+    }
+
+    /* ------------ PAGINACIO ------------ */
+
+    .footer-top__contacte
+    {
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        justify-self: end; 
+        position: absolute; 
+        bottom: -5px;
+
+        /* --- FONT RSPONSIVE --- */
+        font-style: italic;
+        font-size: calc(7px + .5vw);
+    }
+    /* ---------------------- FI ESPAI 1 FOOTER --------------------------  */
+    
+
+    /* ---------------------- INICI ESPAI 2 --------------------------  */
+
+    /* ------------ CONTAINER ESPAI 2 ------------ */
+    .footer-enlaces
+    {
+        padding: 2.5%;
+        background: white;
+
+        /* --- GRID MOVIL --- */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
+
+        /* --- FONT RSPONSIVE --- */
+        font-size: calc(12px + 0.4vw);
+        color: #333333;
+    }
+
+    /* ------------ MEDIA QUERY TABLET ------------ */
+    @media screen and (min-width: 768px) and (max-width: 1023px)
+    {
+        .footer-enlaces 
+        {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* ------------ MEDIA QUERY PC ------------ */
+    @media screen and (min-width: 1024px)
+    {
+        .footer-enlaces
+        {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }   
+    /* ---------------------- FI ESPAI 2 FOOTER --------------------------  */
+
+    /*---------------------- INICI ESPAI CREATIVE COMMONS-------------------------- */
+    .creative {
+        display: grid;
+        grid-template-columns: 1fr 12fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .creative-commons__text 
+    {
+        padding: 0;
+        margin: 0;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        text-align: center;
+    }
+
+    .creative-commons__img 
+    {
+        padding: 0;
+        margin: 0;
+        width: 80px;
+        height: 15px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+
+    }
+
+    .creative-commons__WCAG {
+        padding: 0;
+        margin: 0;
+        width: 80px;
+        height: 15px;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+
+     /*---------------------- FI ESPAI CREATIVE COMMONS-------------------------- */
+
+
+/*---------------------- FI FOOTER -------------------------- */
+
+
+
+
+
+
+
+
+/*---------------------- NICI SECTION GLOBAL -------------------------- */
+
+    /*---------------------- SECCIO AMB ANUNCI -------------------------- */
+    .section-amb-anunci
+    {
+        text-align: center;
+        display: grid;
+        grid-row: auto;
+        grid-template-columns: 2fr 4.4fr;
+        grid-gap: 20px;
+    }
+
+    .section-amb-anunci__anunci
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;  
+        grid-row-start: 4;
+        grid-row-end: 4 ;
+
+        padding-top: 10%;
+        padding-bottom: 10%;
+        max-width: 100%;
+        display: block;
+
+    }
+
+    .section-amb-anunci__anunci-img
+    {
+        margin-bottom: 20px;
+        height: 30px;
+        width: 119px;
+    }
+
+    .section-amb-anunci__novetats
+    {
+        padding-top: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;  
+        grid-row: 1;
+    }
+
+    .section-amb-anunci__ofertes
+    {
+        padding-top: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;  
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .section-amb-anunci__best-sellers
+    {
+        padding-top: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;  
+        grid-row: 3;
+
+    }
+
+    .section-amb-anunci_titol
+    {
+        color: #333333;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+
+    .section-amb-anunci_contenidor
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .section-amb-anunci_titol--subrayado {
+        border-bottom: 4px solid #7d9c73; 
+        display: inline; 
+
+    }
+
+    /* ------------ MEDIA QUERY PC ------------ */
+    @media screen and (min-width: 1224px)
+    {
+        .section-amb-anunci__anunci
+        {
+            grid-column-start: 1;
+            grid-column-end: 1;  
+            grid-row: 2;
+        }
+
+        .section-amb-anunci__novetats
+        {
+            grid-column-start: 1;
+            grid-column-end: 3;  
+            grid-row: 1;
+        }
+
+        .section-amb-anunci__ofertes
+        {
+            grid-column-start: 2;
+            grid-column-end: 2;  
+            grid-row: 2;
+        }
+    } 
+    /*---------------------- FI SECCIO AMB ANUNCI -------------------------- */
+
+
+    /*---------------------- INICI SECTION CARROUSEL -------------------------- */
+    .section-carrousel
+    {
+
+        /* --- CSS GRID LAYOUT MOVIL + TABLET + PC --- */ 
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        margin-bottom: 5%;
+        max-height: 20vw;
+
+
+    }
+
+    .section-carrousel__slides
+    {
+        margin-top: 0;
+        color: white;
+        padding: 10px;
+        border: 1px solid #fff;
+        text-align: center;
+        font-size: calc(11px + .5vw);
+
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        
+        
+        
+    }
+
+    .carrousel__image
+    {
+        max-height: 20vw;
+    }
+
+    .carousel-caption--titol
+    {
+        background-color:rgba(50, 50, 50, 0.5);
+    }
+    /*---------------------- FI SECTION CARROUSEL -------------------------- */
+/*---------------------- FI SECTION GLOBAL -------------------------- */
+
+
+
+
+
+
+
+/*---------------------- INICI PÀGINA ODS  -------------------------- */
+    /*---------------------- ODS ELEMENTS SECTION INFO -------------------------- */
+
+    .ods-cabecera
+    {
+        display: grid;
+        grid-row: auto;
+    }
+
+    .ods-cabecera__frase
+    {
+        padding: 2.5%;
+        margin-bottom: 2.5%;
+        text-align: center; 
+        font-style: italic;
+        font-weight:lighter;
+        font-size: calc(9px + 1vw);
+        margin-top: 2.5%;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .ods-cabecera__titol
+    {
+        text-align: center;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 2.5%;
+        
+    }
+
+    .ods-cabecera__text
+    {
+        grid-row-start: 3;
+        grid-row-end: 3;
+
+    }
+
+    .ods-cabecera-img
+    {
+        margin-top: -10%;
+        margin-bottom: -10%;
+    }
+
+/*---------------------- FI PÀGINA ODS  -------------------------- */
+
+
+
+
+
+
+
+
+/*---------------------- INICI PÀGINA INFO LEGAL  -------------------------- */
+
+    /*----------------------  ELEMENTS SECTION INFO -------------------------- */
+    .info-legal-cabecera__titol
+    {
+        text-align: center;
+        font-size: calc(14px + 1.5vw);
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    /* ------------ COLORS TAULA ------------ */
+    .table-striped>tbody>tr:nth-child(odd)>td, 
+    .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: rgba(125, 156, 115, 0.2); /
+    }
+
+/*---------------------- FI PÀGINA INFO LEGAL  -------------------------- */
+
+
+
+
+
+
+
+
+/*---------------------- INICI PÀGINA QUI SOM? -------------------------- */
+
+
+.qui-som-info
+{
+    display: grid;
+    grid-row: auto;
+    
+}
+
+.qui-som-info__titol
+{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.qui-som-info__text
+{
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+/*---------------------- FI PÀGINA QUI SOM? -------------------------- */
+
+ 
+
+
+
+
+
+
+/*---------------------- INICI PÀGINA CONTACTE -------------------------- */
+  
+.contacte
+{
+    display: grid;
+    grid-row: auto;
+    
+}
+
+.contacte__info
+{
+    margin-top: 2.5%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.contacte__titol
+{
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2.5%;
+}
+
+.contacte__caixa
+{
+    padding-top:30px ;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+/*---------------------- PÀGINA EQUIP -------------------------- */
+
+.equip
+{
+    display: grid;
+    grid-column: 1fr, 1fr;
+    grid-row: auto;
+    column-gap: 5%;
+    padding: 5%;
+}
+
+.equip__img
+{
+    padding-top: 2.5%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:1;
+    grid-row-end: 1;
+    max-width: 75%;
+    display: block;
+}
+
+.equip__descripcio
+{   
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+.equip__descripcio2
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+ /* ------------ MEDIA QUERY PC ------------ */
+ @media screen and (min-width: 720px)
+ {
+    .equip__descripcio
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;  
+        grid-row: 1;
+    }
+
+    .equip__descripcio2
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;  
+        grid-row: 2;
+    }
+
+    .equip__img
+    {
+        grid-column-start: 2;
+        grid-column-end: 3;  
+        grid-row: 2;
+    }
+ } 
+
+
+
+
+
+
+
+
+
+
+/*---------------------- CONTENIDOR PRODUCTES ANTIC (BORRAR) -------------------------- */
+   
+ .book-container 
+ {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: auto;
+     gap: 20px;
+ }
+ 
+ .book {
+     background-color: rgba(125, 156, 115, 0.2);
+     border: 1px solid #ddd;
+     padding: 10px;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     padding-bottom: calc(15px + 4vw);
+ }
+ 
+.book img {
+    max-width: 100%;
+    height: 70%;
+}
+
+/* ------------ MEDIA QUERY TABLET ------------ */
+@media screen and (min-width: 900px) 
+{
+    .book-container 
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+}
+
+.modal-llibre
+{
+    display: grid;
+    grid-column: 1fr, 2fr;
+    grid-row: auto;
+    column-gap: 5%;
+    padding: 5%;
+}
+
+.modal-llibre_img
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+
+.modal-llibre__text
+{   
+    padding-top: 0;
+    margin-top: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.autor
+{
+    display: none !important;
+}
+
+@media screen and (min-width: 720) {
+    .autor
+    {
+    display: block !important;
+    }
+  
+}
+
+
+
+
+
+
+
+
+/*---------------------- PLANTILLA DETALL-------------------------- */
+
+
+.plantilla-detall
+{
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+    column-gap: 0%;
+    padding: 5%;
+}
+
+.plantilla-detall__img
+{
+    display: grid;
+    max-width: 295px;
+    min-width: 147px;
+    max-height: 445px;
+    min-height: 222px;
+    padding-top: 2.5%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:1;
+    grid-row-end: 1;
+
+}
+
+.plantilla-detall__descripcio
+{   margin-left: 5%;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+.plantilla-detall__sinopsis
+{  
+    display: grid;
+    margin-top: 2.5%;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.plantilla-detall__btn
+{  
+   
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    
+}
+
+.plantilla-detall__video
+{  
+    display: grid;
+   
+    margin-top: 2.5%;
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+
+}
+
+
+
+
+
+
+
+/*---------------------- Registre -------------------------- */
+.modal-footer-container
+{
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 4;
+}
+
+.modal-footer-container__titol
+{
+
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+}
+
+.modal-footer-container__botons
+{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.registre
+{
+    padding:5%;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 7;
+    grid-column-gap: 100px;
+}
+
+.registre-c1
+{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.registre-c2
+{
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.registre--input
+{
+    margin-bottom: 20px;
+}
+
+.registre__titol
+{   padding-top: 30px;
+    text-align: center;
+}
+
+.registre__btn
+{   
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 9;
+
+
+    max-height: 50px;
+    margin-top: 30px;
+}
+
+.registre__btn-cookies
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 10;
+
+
+    max-height: 50px;
+    margin-top: 30px;
+
+}
+
+.registre__btn-cookies--eliminar
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 11;
+    grid-row-end: 11;
+
+
+    max-height: 50px;
+    margin-top: 30px;
+}
+
+
+.registre__titol2
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+.registre-c1__banc
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+
+
+    margin-top: 30px;
+}
+
+.select--b
+{
+    background-color: #7d9c73;
+    border: #333333;
+}
+
+.registre-c1__banc-text
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+
+
+    text-align:start;
+    margin-top: 30px;
+}
+
+#bancos {
+    text-align: center;
+}
+
+.registre__titol3
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    text-align: center;
+
+    margin-top: 30px;
+    
+}
+
+.registre-checklist
+{
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:8;
+
+    margin-top: 30px;
+}
+
+.registre-checklist__contingut
+{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: auto;
+    padding: 5%;
+    column-gap: 5%;
+}
+
+
+.registre-checklist__f1 
+{
+    grid-column: 1; /* Ocupa la primera columna */
+    grid-row: 1; /* Establece en la primera fila */
+}
+
+.registre-checklist__f2 
+{
+
+    grid-column: 2; /* Ocupa la segunda columna */
+    grid-row: 1; /* Establece en la primera fila */
+}
+
+.registre-checklist__f3
+{
+
+    grid-column: 3; /* Ocupa la segunda columna */
+    grid-row: 1; /* Establece en la primera fila */
+}
+
+.registre__info-input
+{   
+    margin-top: 2.5%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 9;
+}
+
+
+
+
+@media screen and (min-width: 900px) 
+{
+    .registre-c1
+    {
+        grid-column-start:1 ;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .registre-c2
+    {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .registre__btn
+    {   
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+
+
+        margin-top: 30px;
+    }
+    
+    .registre-c1__banc
+    {
+       
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+
+    }
+
+    .registre-c1__banc-text
+    {
+       
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+
+
+    }
+    .registre__btn
+    {   
+        margin-top: 2.5%;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 0;
+
+        max-height: 50px;
+        margin-top: 30px;
+    }
+
+    .registre__btn
+    {   
+        margin-top: 2.5%;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 9;
+
+
+        max-height: 50px;
+        margin-top: 30px;
+    }
+
+    .registre__btn-cookies
+    {
+        margin-top: 2.5%;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 10;
+
+
+        max-height: 50px;
+        margin-top: 30px;
+
+    }
+
+    .registre__btn-cookies--eliminar
+    {
+        margin-top: 2.5%;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 10;
+        grid-row-end: 10;
+
+
+        max-height: 50px;
+        margin-top: 30px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- INICI 404 -------------------------- */
+.gif-container 
+{
+    display: grid;
+    grid-column: repeat(12, 1fr);
+    grid-row: repeat(6, 1fr);
+}
+  
+
+.error404__gif
+{
+    padding: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.error404__text
+{
+    padding: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    opacity: 0.4;
+    color: white;
+}
+
+
+@keyframes shake 
+{
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+
+  }
+
+  
+.moure-contenidor 
+{
+    animation: shake 1s infinite;
+}
+
+ /*---------------------- FI 404 -------------------------- */
+
+
+
+
+
+
+
+/*---------------------- NOU CONTENIDOR DE PRODUCTES ---------------------- */
+
+.targeta-contenedor-swipe
+{
+    height: 400px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: transparent;
+    
+}
+
+.targeta-contenedor
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.targeta-contenedor__zona-baixa
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+/* ------------ MEDIA QUERY TABLET ------------ */
+@media screen and (min-width: 900px) 
+{
+    .targeta-contenedor 
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .targeta-contenedor__zona-baixa
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) 
+{
+    .targeta-contenedor__zona-baixa
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+}
+
+.targeta button{
+    display: none;
+}
+
+.targeta:hover button{
+    display: grid;
+}
+
+.targeta__titol
+{
+    height: 50px; /* Ajusta el valor según tus necesidades */
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+.targeta__contenidor-img
+{
+    display: grid;
+    grid-row:repeat(20, 1fr);
+    grid-column:repeat(20, 1fr);
+    width: 196.6px;
+    height: 296.6px; 
+}
+
+.targeta:hover
+{
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.targeta__img
+{
+    height: 296.6px; 
+    grid-row-start: 1;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 20;
+    
+    
+        
+}
+
+
+.targeta__botoAfegirCistella
+{
+    margin: 10px;
+    grid-row-start: 19;
+    grid-row-end: 19;
+    grid-column-start: 1;
+    grid-column-end: 20;
+    
+}
+
+.targeta__contenidor-descripcio
+{
+    margin-top: 10px;
+    display: grid;
+    
+    width: 196.6px;
+    height: 50px; 
+
+    background-color: rgba(125, 156, 115, 0.2);
+    border-radius: 10px;
+    
+    place-items: center;
+
+}
+
+
+
+
+
+
+
+
+/*---------------------- MODIFICACIONS DEL SWIPER ---------------------- */
+.swiper 
+{
+    width: 100%;
+    height: 100%;   
+}
+
+.swiper-slide 
+{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev 
+{
+    color:rgba(125, 156, 115, 1) !important;
+}
+
+.swiper-button-next 
+{
+    transform: translateX(+40%); /* Mueve las flechas a la izquierda y derecha */
+    z-index: 1;
+}
+
+.swiper-slide
+{
+    background-color: transparent;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(125, 156, 115, 1) !important; 
+}
+
+
+.cookie__contenidor
+{
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 4;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: #FFFFFF;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 2.5%;
+    padding: 2.5%;
+    z-index: 10;
+    border: 1px solid #333333;
+    
+}
+
+.cookie__img
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 100px;
+    height: 100px;
+
+}
+
+.cookie__titol
+{
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 125px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+
+.cookie__text
+{
+    font-size: 14px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.cookie__btn-accpetar
+{
+    padding-left: 30px;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-bottom: 20px;
+
+}
+
+.cookie__btn-denegar
+{
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-bottom: 20px;
+
+}
+
+.cookie__contenidor2
+{
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 4;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: #FFFFFF;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 2.5%;
+    padding: 2.5%;
+    z-index: 4;
+    border: 1px solid #333333;
+}
+
+.cookie_video
+{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------- PÀGINA TV2.2 ---------------------- */
+
+.llista-data-base
+{
+    display: grid;
+    grid-row:repeat(20, 1fr);
+    grid-column:repeat(6, 1fr);
+    padding: 5%;
+    column-gap: 25px;
+    row-gap: 25px;
+
+}
+
+.llista-data-base__titol
+{
+    grid-column-start: 1;
+    grid-column-end: 7 ;
+    grid-row-start: 1;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.llista-data-base__titol2
+{
+    grid-column-start: 1;
+    grid-column-end: 7 ;
+    grid-row-start: 1;
+    text-align: center;
+    margin-bottom: 0;
+}
+.llista-data-base__titol2 .icon {
+    color: #333;
+}
+
+.llista-data-base__llistat_ordenat-btn
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    margin-bottom: 50px;
+}
+
+.llista-data-base__llistat_ordenat-btn .btn 
+{
+    height: 57px;
+    width:200px;
+}
+
+.llista-data-base__llistat_ordenat-key1
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;   
+}
+
+.llista-data-base__llistat_ordenat-key2
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    
+}
+
+.llista-data-base__eliminarBD-btn
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 6;
+}
+
+.llista-data-base__eliminarBD-btn .btn 
+{
+    height: 70px;
+    width:200px;
+}
+
+.llista-data-base__eliminarBD-text
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 6; 
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.llista-data-base__llista
+{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+}
+
+.btn-danger:hover
+{
+    background-color: #FF6961;
+}
+
+.warning
+{
+    background-color: #333333;
+}
+
+.warning:hover
+{
+    background-color: #FF6961;
+}
+
+.llista-data-base__modificar-btn
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    margin-bottom: 50px;
+
+}
+
+.llista-data-base__modificar-btn .btn 
+{
+    height: 57px;
+    width:200px;
+}
+
+.llista-data-base__modificar-opcio
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+
+.lista-data-base__modificar-ISBN
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.lista-data-base__modificar-valor
+{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
+
+.td-centered {
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.llista-data-base__afegir-btn
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.llista-data-base__afegir-btn .btn 
+{
+    height: 57px;
+    width:200px;
+}
+.llista-data-base__afegir-btn2
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.llista-data-base__afegir-btn2 .btn 
+{
+    height: 57px;
+    width:300px;
+}
+
+.llista-data-base__afegir-autor
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+}
+
+.llista-data-base__afegir-titol
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+}
+
+.llista-data-base__afegir-genere
+{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+
+.llista-data-base__afegir-preu
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 5;
+}
+
+.llista-data-base__afegir-ISBN13
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+}
+
+.llista-data-base__afegir-imatge
+{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 5;
+}
+
+
+
+
+/*---------------------- PÀGINA GEOLOCALITZACIÓ ---------------------- */
+.geolocal
+{
+    display: grid;
+    grid-row:repeat(20, 1fr);
+    grid-column:repeat(6, 1fr);
+    padding: 1%;
+}
+
+.geolocal__titol
+{
+    grid-column-start: 1;
+    grid-column-end: 7 ;
+    grid-row-start: 1;
+    text-align: center;
+}
+
+.geolocal__desplegable-calaix
+{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #333333;
+    padding: 1%;
+    margin-bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.geolocal__desplegable
+{
+ 
+    padding: 0;
+    margin: 0;
+}
+
+.geolocal__mapa
+{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    padding: 1%;
+    background-color: #333333;
+    border-radius: 0;
+}
+
+.geolocal__label--light
+{
+    padding: 2%;
+}
+
+.geolocal__mapa
+{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.geolocal__latitud
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    padding: 1%;
+    padding-left: 2%;
+    background-color: #333333;
+    min-width: fit-content;
+}
+
+.geolocal__lloc
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    padding: 1%;
+    padding-left: 2%;
+    background-color: #333333;
+    min-width: 50px;
+
+
+}
+
+.geolocal__relleno
+{
+    grid-column-start: 3; 
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: #333333;
+
+}
+
+/*---------------------- MAPA LEAFLET---------------------- */
+#mapid 
+{ 
+    height: 500px; 
+    z-index: 0; /* tema modales */
+}
+
+@keyframes flash 
+{
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+  
+  .flash-button
+  {
+    animation: flash 2s infinite;
+  }
+  
+  .llista-data-base__json-btn
+  {
+    text-align: right;
+  }
+  
+  .llista-data-base__json-btn .btn 
+  {
+      height: 50px;
+      width:200px;
+  }
+  
+  .llista-data-base__json-text
+  {
+      grid-column-start: 5;
+      grid-column-end: 5;
+      grid-row-start: 2; 
+      border-radius: 10px;
+      font-size: 16px;
+  }
+
+  /*-------------------------------- css datatables-----------------------*/
+  .drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.file-input {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead th {
+    background-color: #333 ; 
+    color: #fff; 
+    border: 1px solid #333; 
+    text-align: center;
+    vertical-align: middle; 
+}
+
+/* Estilo para las celdas de la taula */
+td {
+    border: 1px solid ; 
+    padding: 8px; 
+    text-align: center; 
+    vertical-align: middle; 
+}
+#miTabla tbody tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#miTabla tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+#miTabla tbody tr:hover td:first-child {
+    background-color: #333; 
+    color: #fff;
+}
+
+/*----------------------------------- MENU ADMIN-------------------------------------*/
+.botonsOrdenacio
+{
+    margin-top: 5%;
+    display: grid;
+    grid-column:repeat(6, 1fr);
+    row-gap: 25px;
+}
+
+.botonsOrdenacio__TA
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.botonsOrdenacio__AG
+{
+    grid-column-start: 2;
+    grid-column-end: 2 ;
+    grid-row-start: 1;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+/*--------------------------------- REGISTRE ÈXIT ------------------------------------------- */
+
+
+.registreExit 
+{
+    padding: 5%;
+
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+}
+
+.registreExit__text 
+{
+    margin-top: 25px;
+    display: grid;
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.registreExit__imatge 
+{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-bottom: 0%;
+    max-width: 800px;
+    border: 2px solid #333333;
+}
+
+.registreExit__IniciSes 
+{
+    display: grid;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.filtre 
+{
+    display: grid;
+    grid-row:repeat(20, 1fr);
+    grid-column:repeat(6, 1fr);
+    padding: 1%;   
+}
+
+.filtre__preu
+{
+    padding-left: 10px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.filtre__preu2
+{
+    padding-left: 10px;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+.filtre__categoria 
+{
+    padding-left: 10px;
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+.filtre__btn
+{
+    
+    display: grid;
+    max-height: 60px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+.cesta__pago
+{
+    border-radius: 10px;
+    margin: 0%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.progress-bar-container {
+    position: relative;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: rgba(125, 156, 115, 1);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-mark {
+    position: absolute;
+    bottom: -15px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #333;
+}
+
+.normal-mark { left: 0%; }
+.original-mark { left: 25%; }
+.genuino-mark { left: 50%; }
+.leyenda-mark { left: 75%; }
