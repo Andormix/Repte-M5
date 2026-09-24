@@ -1,5 +1,4 @@
-# 📚 El Racó del Llibre — Laravel Ecommerce Bookstore With Gamification (Fidelity System)
-
+# El Racó del Llibre — Laravel Ecommerce Bookstore With Gamification (Fidelity System)
 
 [![Laravel](https://img.shields.io/badge/Laravel-10-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](#)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](#)
@@ -7,6 +6,11 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
 [![Academic Project](https://img.shields.io/badge/Project-M5%20Repte-003366?style=for-the-badge)](#)
+
+
+<img width="1249" height="675" alt="image" src="https://github.com/user-attachments/assets/2fa76110-91ef-4a12-a66b-d767dbdfacd1" />
+
+
 
 El Racó del Llibre is an online bookstore developed for the **M5 Repte** project.
 
