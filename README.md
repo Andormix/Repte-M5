@@ -1,4 +1,5 @@
-# 📚 BookSpace — M5 Repte
+# 📚 El Racó del Llibre — Laravel Ecommerce Bookstore With Gamification (Fidelity System)
+
 
 [![Laravel](https://img.shields.io/badge/Laravel-10-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](#)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](#)
@@ -7,7 +8,7 @@
 [![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
 [![Academic Project](https://img.shields.io/badge/Project-M5%20Repte-003366?style=for-the-badge)](#)
 
-BookSpace is an online bookstore developed for the **M5 Repte** project.
+El Racó del Llibre is an online bookstore developed for the **M5 Repte** project.
 
 The application allows users to browse books, filter the catalogue, create an account, log in, manage a shopping cart, and complete purchases. It also includes a section focused on book donation, book reuse, collection points, and the **United Nations Sustainable Development Goals**.
 
@@ -48,7 +49,7 @@ I developed the project using Laravel and organized it following the usual MVC s
 
 ## Project Overview
 
-The main idea of BookSpace is to create a complete bookstore experience instead of only displaying a list of books.
+The main idea of El Racó del Llibre is to create a complete bookstore experience instead of only displaying a list of books.
 
 The application includes:
 
@@ -835,7 +836,7 @@ Edit the `.env` file with the local application and database settings.
 Example:
 
 ```env
-APP_NAME=BookSpace
+APP_NAME=El Racó del Llibre
 APP_ENV=local
 APP_KEY=
 APP_DEBUG=true
