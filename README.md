@@ -68,6 +68,8 @@ The application includes:
 
 The user interface is mainly written in Catalan, including the route names, database fields, model names, and messages shown to the user.
 
+<img width="921" height="757" alt="image" src="https://github.com/user-attachments/assets/324ff8e7-8abe-4ea0-853d-4e1d3fbd8ac8" />
+
 ---
 
 ## Main Features
@@ -98,6 +100,8 @@ The user interface is mainly written in Catalan, including the route names, data
 ---
 
 ## Book Catalogue
+
+<img width="1267" height="722" alt="image" src="https://github.com/user-attachments/assets/5c39c481-dc0e-45d1-b48c-b3184c077bd2" />
 
 Books are represented by the `Llibre` model:
 
@@ -338,6 +342,8 @@ The `pagado` field identifies whether a cart is still active or has already been
 
 The project includes a user-status system based on object-oriented programming.
 
+<img width="1758" height="773" alt="descomptes" src="https://github.com/user-attachments/assets/c4eeda3a-7e09-48ff-bcf6-09f2a7ff8502" />
+
 The available statuses are:
 
 ```text
@@ -445,7 +451,7 @@ The application follows Laravel's MVC structure.
 
 ```text
 ┌─────────────────────────────┐
-│        Blade Views           │
+│        Blade Views          │
 │                             │
 │  home                       │
 │  productes                  │
@@ -456,14 +462,14 @@ The application follows Laravel's MVC structure.
                │
                ▼
 ┌─────────────────────────────┐
-│        Web Routes            │
+│        Web Routes           │
 │                             │
 │  routes/web.php             │
 └──────────────┬──────────────┘
                │
                ▼
 ┌─────────────────────────────┐
-│        Controllers           │
+│        Controllers          │
 │                             │
 │  HomeController             │
 │  ProductesController        │
@@ -476,7 +482,7 @@ The application follows Laravel's MVC structure.
                │
                ▼
 ┌─────────────────────────────┐
-│       Services and Models    │
+│       Services and Models   │
 │                             │
 │  CarritoService             │
 │  User                       │
@@ -487,7 +493,7 @@ The application follows Laravel's MVC structure.
                │
                ▼
 ┌─────────────────────────────┐
-│          Database            │
+│          Database           │
 │                             │
 │  users                      │
 │  llibres                    │
@@ -1211,8 +1217,6 @@ The user-status classes were created to apply object-oriented programming concep
 ## Author
 
 Developed by **Eric Torrontera Ruiz**.
-
-Repository:
 
 ---
 
